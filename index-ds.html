@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reetu Thimmaiah — Machine Learning &amp; Data Science</title>
+<meta name="description" content="Reetu Thimmaiah — machine learning engineer and data scientist. Surrogate models for thermal design, production data pipelines on Azure and Databricks, and research published at ASME FEDSM 2026.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Karla:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,300;1,6..72,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/ds-styles.css">
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<header class="nav" id="nav">
+  <div class="nav__in">
+    <a href="#home" class="brand" aria-label="Reetu Thimmaiah, home">
+      <svg class="brand__mark" viewBox="0 0 40 40" fill="none" aria-hidden="true">
+        <circle cx="20" cy="20" r="18.5" stroke="#6E8C74" stroke-width="1.1" opacity=".5"/>
+        <circle class="mandala" cx="20" cy="20" r="12.5" stroke="#B4914C" stroke-width="1" opacity=".55"/>
+        <path d="M11 29V13M11 29h18" stroke="#232629" stroke-width="1.4" stroke-linecap="round"/>
+        <path d="M12.5 26.5 18 21l4 3 6.5-9.5" stroke="#232629" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+        <circle cx="18" cy="21" r="1.9" fill="#6E8C74"/><circle cx="22" cy="24" r="1.9" fill="#B4914C"/>
+      </svg>
+      <span class="brand__name">Reetu <b>Thimmaiah</b></span>
+    </a>
+    <nav class="nav__links" id="navLinks" aria-label="Primary">
+      <a class="nav__link" href="#home">Home</a>
+      <a class="nav__link" href="#experience">Work Experience</a>
+      <a class="nav__link" href="#work">Projects</a>
+      <a class="nav__link" href="#skills">Skills</a>
+      <a class="nav__link" href="#community">Community</a>
+      <a class="nav__link" href="#testimonials">Testimonials</a>
+      <a class="nav__link" href="blog.html">Blog</a>
+      <a class="nav__cta" href="#contact">Contact</a>
+    </nav>
+    <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks"><span></span></button>
+  </div>
+  <div class="nav__progress" id="progress"></div>
+</header>
+
+<main>
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+  <div class="wrap">
+    <div class="hero__grid">
+      <div class="hero__text">
+        <span class="hero__status"><i class="pulse"></i> Open for Data Scientist roles</span>
+        <h1 class="hero__name">Reetu Thimmaiah</h1>
+
+        <h2 class="hero__headline">Data <b>Scientist.</b></h2>
+        <p class="hero__copy">I work on end-to-end data science problems, from analyzing data and building machine learning models to deploying them in the cloud.</p>
+        <p class="hero__copy">I have taught yoga to 100+ students and mentored junior data scientists.</p>
+
+        <div class="hero__btns">
+          <a class="btn btn--primary" href="#work">View Work
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 12L12 4M12 4H6M12 4v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="btn btn--ghost" href="#" download>Download Resume
+            <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 2v9m0 0l3.2-3.2M8 11L4.8 7.8M2.6 13.4h10.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+
+        <dl class="hero__meta">
+          <div><dt>Focus</dt><dd>Data Science</dd></div>
+          <div><dt>Based in</dt><dd>San Francisco</dd></div>
+          <div><dt>Work Experience</dt><dd>6.5 years</dd></div>
+          <div><dt>Published</dt><dd>2</dd></div>
+        </dl>
+      </div>
+
+      <div class="stage-wrap">
+      <figure class="stage photo photo--cap rv">
+        <img src="images/rit-leadership-award.jpg" alt="Reetu Thimmaiah holding her Outstanding International Student Service Award certificate at the RIT Student Leadership Awards" decoding="async" fetchpriority="high">
+        <figcaption class="photo__cap"><b>Rochester Institute of Technology</b><span>Student Leadership Awards · 2025–2026</span></figcaption>
+      </figure>
+      <p class="stage__note rv">Recognized by RIT for 2025–26 service through AI research outreach in the Rochester community, weekly yoga classes, fundraising, and helping students find their footing on campus.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<div class="breath" aria-hidden="true">
+  <svg viewBox="0 0 1200 46" preserveAspectRatio="none">
+    <defs><linearGradient id="breathGrad" x1="0" x2="1"><stop offset="0" stop-color="#6E8C74" stop-opacity="0"/><stop offset=".5" stop-color="#6E8C74"/><stop offset="1" stop-color="#B4914C" stop-opacity="0"/></linearGradient></defs>
+    <path class="breath__path" d="M0 23 C 150 23 180 4 300 4 S 450 42 600 42 S 750 4 900 4 S 1050 23 1200 23"/>
+  </svg>
+</div>
+
+<!-- ================= EXPERIENCE ================= -->
+<section class="section" id="experience">
+  <div class="wrap">
+    <div class="s-head rv">
+      <h2 class="s-title">Where I've <em>worked</em></h2>
+    </div>
+
+    <div class="xp-grid">
+      <article class="xp rv">
+        <div class="xp__top">
+          <span class="xp__year">2025</span>
+          <span class="xp__logo" aria-hidden="true"><img src="images/gorbel.png" alt=""
+               onload="this.nextElementSibling.remove()" onerror="this.remove()"><b>Gorbel</b></span>
+        </div>
+        <h3 class="xp__org">Data Scientist (Co-op)</h3>
+        <p class="xp__co">Gorbel Inc.</p>
+        <p class="xp__dates">New York &middot; Jan 2025 &ndash; Jan 2026</p>
+        <p class="xp__desc">I built an end-to-end ML decision-support system for operations and procurement, covering <b>10K&ndash;15K</b> monthly transfers and an estimated <b>7%</b> cost savings.</p>
+      </article>
+
+      <article class="xp rv">
+        <div class="xp__top">
+          <span class="xp__year">2024</span>
+          <span class="xp__logo" aria-hidden="true"><img src="images/rit.png" alt=""
+               onload="this.nextElementSibling.remove()" onerror="this.remove()"><b>RIT</b></span>
+        </div>
+        <h3 class="xp__org">Graduate Research Assistant</h3>
+        <p class="xp__co">Rochester Institute of Technology</p>
+        <p class="xp__dates">Rochester, New York &middot; 2024 &ndash; 2026</p>
+        <p class="xp__desc">Published <b>two</b> research papers at ASME FEDSM 2026 on using machine learning for heat sink cooling predictions.</p>
+        <div class="xp__rec">
+          <div class="xp__reck">Recognition</div>
+          <ul>
+            <li>Graduate Scholarship &mdash; 40% of tuition <span>2024</span></li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="xp rv">
+        <div class="xp__top">
+          <span class="xp__year">2017</span>
+          <span class="xp__logo" aria-hidden="true"><img src="images/tcs.png" alt=""
+               onload="this.nextElementSibling.remove()" onerror="this.remove()"><b>TCS</b></span>
+        </div>
+        <h3 class="xp__org">Senior Data Scientist</h3>
+        <p class="xp__co">Tata Consultancy Services</p>
+        <p class="xp__dates">Bangalore, India &middot; Aug 2017 &ndash; Jun 2023</p>
+        <p class="xp__desc">Built and ran the data systems enterprise clients depend on: pipelines, services, and the batch jobs behind them, handed over in a state the next engineer could maintain.</p>
+        <div class="xp__rec">
+          <div class="xp__reck">Recognition</div>
+          <ul>
+            <li>Service and Commitment Award <span>2023</span></li>
+            <li>On the Spot Award <span>2022</span></li>
+          </ul>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<div class="breath" aria-hidden="true">
+  <svg viewBox="0 0 1200 46" preserveAspectRatio="none">
+    <path class="breath__path" d="M0 23 C 150 23 180 4 300 4 S 450 42 600 42 S 750 4 900 4 S 1050 23 1200 23"/>
+  </svg>
+</div>
+
+<!-- ================= WORK ================= -->
+<section class="section" id="work">
+  <div class="wrap">
+    <div class="s-head rv">
+      <h2 class="s-title">Things I've built, <em>and published</em></h2>
+    </div>
+
+    <div class="work-grid">
+
+      <article class="proj rv">
+        <div class="proj__body">
+          <div class="proj__meta">
+            <h3>Heat sink cooling predictor</h3>
+            <dl class="spec-rows">
+            <div class="spec-row"><dt>Problem</dt><dd>Thermal resistance &amp; pressure drop, without waiting on a CFD solve</dd></div>
+            <div class="spec-row"><dt>Data</dt><dd>Parametric simulation runs over fin geometry and flow conditions</dd></div>
+            <div class="spec-row"><dt>Model</dt><dd>Ensemble regression <b>· scikit-learn / XGBoost</b></dd></div>
+            <div class="spec-row"><dt>Serving</dt><dd>An answer in <b>milliseconds</b>, inside the design loop</dd></div>
+            </dl>
+          </div>
+          <div>
+            <p>A regression pipeline that predicts thermal resistance and pressure drop for heat sink geometries, trained on simulation data. Designers get an answer in milliseconds instead of waiting hours for a CFD run, which turns thermal design into something you can iterate on. Includes a feature-importance view so the model's reasoning stays inspectable.</p>
+            <div class="tags"><span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">XGBoost</span><span class="tag tag--gold">CFD data</span><span class="tag tag--clay">Streamlit</span></div>
+            <div class="proj__links">
+              <a href="https://github.com/reetu95/cfd-ml-surrogate-heatsink" rel="noopener">Repo <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 12L12 4M12 4H6M12 4v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="proj rv">
+        <div class="proj__body">
+          <div class="proj__meta">
+            <h3>Churn without a cancel button</h3>
+            <dl class="spec-rows">
+              <div class="spec-row"><dt>Problem</dt><dd>A grocery basket has no cancel button &mdash; churn has to be inferred, not observed</dd></div>
+              <div class="spec-row"><dt>Method</dt><dd>Uplift modelling against a <b>randomised control group</b></dd></div>
+              <div class="spec-row"><dt>Decision</dt><dd>Rank customers by response &times; value, not by risk</dd></div>
+              <div class="spec-row"><dt>Shipped</dt><dd>A Streamlit app that takes a budget and returns a targeting list</dd></div>
+            </dl>
+          </div>
+          <div>
+            <p>Retail customers do not announce that they have left; someone who churned and someone simply due for their next shop look identical in the data. This project uses a campaign&rsquo;s randomised holdout to measure what an offer actually caused, then asks which customers are worth spending on.</p>
+            <div class="finding">
+              <div class="finding__k">Finding</div>
+              <p>At a 5% budget, targeting by likely response returns <b>147</b> extra purchases per 1,000 customers against <b>32</b> for targeting by churn risk &mdash; but the keenest responders spend the least. Weight response by spend and the ranking inverts: <b>&#8381;1.24M</b> incremental revenue per 1,000 against <b>&#8381;0.27M</b>. Neither &ldquo;who is leaving&rdquo; nor &ldquo;who responds&rdquo; is enough on its own.</p>
+            </div>
+            <div class="tags"><span class="tag">Python</span><span class="tag">uplift modelling</span><span class="tag">scikit-learn</span><span class="tag tag--gold">Streamlit</span><span class="tag tag--clay">A/B holdout</span></div>
+            <div class="proj__links">
+              <a href="https://retention-targeting.streamlit.app" rel="noopener">Live app <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 12L12 4M12 4H6M12 4v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+              <a href="https://github.com/reetu95/Customer-Retention-Segmentation-Uplift" rel="noopener">Repo <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 12L12 4M12 4H6M12 4v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="proj rv">
+        <div class="proj__body">
+          <div class="proj__meta">
+            <h3>PriceWise &mdash; C2B vehicle pricing</h3>
+            <dl class="spec-rows">
+              <div class="spec-row"><dt>Problem</dt><dd>What is this car worth, what should we offer, and what margin is left?</dd></div>
+              <div class="spec-row"><dt>Model</dt><dd>CatBoost regression on log price <b>· engineered age &amp; interaction features</b></dd></div>
+              <div class="spec-row"><dt>Serving</dt><dd>FastAPI endpoints for price, recommendation, and model health</dd></div>
+              <div class="spec-row"><dt>Loop</dt><dd>Every recommendation logged as accepted, rejected, or <b>overridden</b></dd></div>
+            </dl>
+          </div>
+          <div>
+            <p>A pricing decision product rather than a notebook: a pricing user enters vehicle details and the system predicts market value, recommends an acquisition offer, estimates margin after reconditioning, flags quotes needing approval, and records what the human did with the recommendation.</p>
+            <div class="tags"><span class="tag">Python</span><span class="tag">CatBoost</span><span class="tag">FastAPI</span><span class="tag tag--gold">React console</span><span class="tag tag--clay">decision logging</span></div>
+            <div class="proj__links">
+              <a href="https://github.com/reetu95/AutopricingNew" rel="noopener">Repo <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 12L12 4M12 4H6M12 4v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <article class="proj rv">
+        <div class="proj__body">
+          <div class="proj__meta">
+            <h3>Lakehouse operations dashboard</h3>
+            <dl class="spec-rows">
+            <div class="spec-row"><dt>Problem</dt><dd>Broken pipelines surfacing downstream instead of on a dashboard</dd></div>
+            <div class="spec-row"><dt>Signals</dt><dd>Ingestion runs, table freshness, and spend, in one view</dd></div>
+            <div class="spec-row"><dt>Platform</dt><dd>Databricks lakehouse <b>· PySpark on Azure</b></dd></div>
+            <div class="spec-row"><dt>Audience</dt><dd>The data team, <b>before</b> the people downstream</dd></div>
+            </dl>
+          </div>
+          <div>
+            <p>A single view over ingestion jobs, freshness, and cost across a Databricks lakehouse — so the team stops finding out about a broken pipeline from the people downstream.</p>
+            <div class="tags"><span class="tag">Azure</span><span class="tag">Databricks</span><span class="tag">PySpark</span><span class="tag tag--gold">Power BI</span></div>
+            <div class="proj__links">
+              <a href="https://github.com/reetu95/realtime-inventory-lakehouse" rel="noopener">Repo <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 12L12 4M12 4H6M12 4v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="stack-note stack-note--gap rv"><span>Also on GitHub</span><i></i></div>
+
+    <div class="repo-list rv">
+      <a class="repo" href="https://github.com/reetu95/enterprise-rag-service-v2" rel="noopener">
+        <span class="repo__n">enterprise-rag-service-v2</span><span class="repo__l">Python</span>
+        <span class="repo__d">Production-oriented RAG backend &mdash; FastAPI, ChromaDB, PostgreSQL, citations, and retrieval evaluation</span>
+      </a>
+      <a class="repo" href="https://github.com/reetu95/ai-financial-document-analysis" rel="noopener">
+        <span class="repo__n">ai-financial-document-analysis</span><span class="repo__l">Python</span>
+        <span class="repo__d">Evaluating LLMs on SEC 10-K filings using retrieval-augmented generation</span>
+      </a>
+      <a class="repo" href="https://github.com/reetu95/SupportAI" rel="noopener">
+        <span class="repo__n">SupportAI</span><span class="repo__l">Jupyter</span>
+        <span class="repo__d">Duplicate-question detection: classical NLP, transformer fine-tuning, hybrid retrieval, confidence-based routing</span>
+      </a>
+      <a class="repo" href="https://github.com/reetu95/End-to-End-Medical-Chatbot-using-Llama-2" rel="noopener">
+        <span class="repo__n">End-to-End-Medical-Chatbot-using-Llama-2</span><span class="repo__l">Jupyter</span>
+        <span class="repo__d">Retrieval chatbot over a medical corpus, served end to end</span>
+      </a>
+      <a class="repo" href="https://github.com/reetu95/repo-onboarding-agent" rel="noopener">
+        <span class="repo__n">repo-onboarding-agent</span><span class="repo__l">Python</span>
+        <span class="repo__d">Multi-agent system that reads a repo through the GitHub MCP server and writes its onboarding docs</span>
+      </a>
+      <a class="repo" href="https://github.com/reetu95/DBT-Snowflake-project" rel="noopener">
+        <span class="repo__n">DBT-Snowflake-project</span><span class="repo__l">Python</span>
+        <span class="repo__d">dbt models on Snowflake, orchestrated on AWS</span>
+      </a>
+      <a class="repo" href="https://github.com/reetu95/quora_question_pair" rel="noopener">
+        <span class="repo__n">quora_question_pair</span><span class="repo__l">Jupyter</span>
+        <span class="repo__d">Question-pair similarity modelling on the Quora dataset</span>
+      </a>
+      <a class="repo" href="https://github.com/reetu95/DonorsChoose.org---LogisticRegression" rel="noopener">
+        <span class="repo__n">DonorsChoose.org---LogisticRegression</span><span class="repo__l">HTML</span>
+        <span class="repo__d">TF-IDF and word2vec features, GridSearchCV and K-fold on DonorsChoose applications</span>
+      </a>
+    </div>
+
+    <div class="stack-note stack-note--gap rv"><span>Published research</span><i></i></div>
+
+    <div class="research">
+      <div class="res-cards">
+        <article class="card res rv">
+          <div class="res__top"><span class="badge badge--sage">ASME FEDSM 2026</span><span class="badge badge--gold">Accepted</span></div>
+          <h3>Predicting heat sink thermal performance with supervised learning</h3>
+          <p>Models trained on parametric simulation data estimate thermal resistance across fin geometries and flow conditions, with an error analysis showing where the surrogate stays reliable and where it should defer back to full simulation.</p>
+          <div class="res__meta"><span>Role · <b>Lead author</b></span><span>Method · <b>Ensemble regression</b></span></div>
+        </article>
+
+      </div>
+
+      <div class="res-vis rv" style="transition-delay:.1s">
+        <svg viewBox="0 0 460 330" fill="none" aria-hidden="true">
+          <defs>
+            <linearGradient id="flowG" x1="0" x2="1"><stop offset="0" stop-color="#6E8C74" stop-opacity=".2"/><stop offset=".5" stop-color="#B4914C"/><stop offset="1" stop-color="#C68A76" stop-opacity=".25"/></linearGradient>
+          </defs>
+          <!-- thermal airflow over fins -->
+          <g>
+            <rect x="40" y="112" width="290" height="12" rx="3" fill="#EDE7D9" stroke="#232629" stroke-opacity=".25"/>
+            <g stroke="#232629" stroke-opacity=".25" fill="#F3EEE3">
+              <rect x="52" y="62" width="16" height="50" rx="3"/><rect x="86" y="62" width="16" height="50" rx="3"/><rect x="120" y="62" width="16" height="50" rx="3"/>
+              <rect x="154" y="62" width="16" height="50" rx="3"/><rect x="188" y="62" width="16" height="50" rx="3"/><rect x="222" y="62" width="16" height="50" rx="3"/>
+              <rect x="256" y="62" width="16" height="50" rx="3"/><rect x="290" y="62" width="16" height="50" rx="3"/>
+            </g>
+            <g stroke="url(#flowG)" stroke-width="2" fill="none" stroke-linecap="round">
+              <path class="dash" d="M12 74c70-14 140 12 210-2s150-10 226 6"/>
+              <path class="dash" d="M12 88c70-10 140 12 210 0s150-8 226 8" opacity=".85"/>
+              <path class="dash" d="M12 102c70-6 140 10 210 2s150-6 226 8" opacity=".7"/>
+            </g>
+          </g>
+          <!-- ML node graph -->
+          <g transform="translate(0,150)">
+            <g stroke="#6E8C74" stroke-opacity=".38" stroke-width=".9">
+              <path class="dash" d="M64 40l72-24M64 40l72 26M64 40l72 70M64 96l72-80M64 96l72 26M64 96l72 70M64 152l72-56M64 152l72 26M64 152l72 70"/>
+              <path class="dash" d="M136 16l76 44M136 66l76-6M136 110l76-44M136 16l76 92M136 110l76-2"/>
+              <path class="dash" d="M212 60l84 32M212 108l84-14"/>
+            </g>
+            <g fill="rgba(199,214,200,.55)" stroke="#6E8C74" stroke-width="1.2">
+              <circle cx="64" cy="40" r="9"/><circle cx="64" cy="96" r="9"/><circle cx="64" cy="152" r="9"/>
+            </g>
+            <g fill="rgba(255,255,255,.9)" stroke="#232629" stroke-opacity=".5" stroke-width="1.2">
+              <circle cx="136" cy="16" r="9"/><circle cx="136" cy="66" r="9"/><circle cx="136" cy="110" r="9"/><circle cx="136" cy="160" r="9"/>
+            </g>
+            <g fill="rgba(223,201,143,.55)" stroke="#B4914C" stroke-width="1.2">
+              <circle cx="212" cy="60" r="9"/><circle cx="212" cy="108" r="9"/>
+            </g>
+            <circle cx="296" cy="86" r="12" fill="rgba(232,207,197,.6)" stroke="#C68A76" stroke-width="1.4"/>
+          </g>
+        </svg>
+        <div class="res-vis__cap">
+          <span>Schematic: airflow over fin geometry → surrogate model → predicted thermal resistance</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="breath" aria-hidden="true">
+  <svg viewBox="0 0 1200 46" preserveAspectRatio="none">
+    <path class="breath__path" d="M0 23 C 150 23 180 4 300 4 S 450 42 600 42 S 750 4 900 4 S 1050 23 1200 23"/>
+  </svg>
+</div>
+
+
+<!-- ================= SKILLS ================= -->
+<section class="section" id="skills">
+  <div class="wrap">
+    <div class="s-head rv">
+      <h2 class="s-title">What I <em>work with</em></h2>
+      <p class="s-lede">The tools I reach for most days.</p>
+    </div>
+
+    <div class="stack">
+        <div class="stack__item rv" style="transition-delay:0.00s">
+          <svg class="stack__ico" viewBox="0 0 48 48" fill="none" aria-hidden="true" style="animation-delay:0.00s"><path d="M24 5c-7 0-6.5 3-6.5 3v3.2h6.7v1H14s-4.6-.5-4.6 6.7 4 7 4 7h2.6v-3.6s-.1-4 4-4h6.6s3.8.1 3.8-3.7v-6.2S31 5 24 5Zm-3.7 2.1a1.2 1.2 0 1 1 0 2.4 1.2 1.2 0 0 1 0-2.4Z" fill="#6E8C74" opacity=".85"/><path d="M24 43c7 0 6.5-3 6.5-3v-3.2h-6.7v-1H34s4.6.5 4.6-6.7-4-7-4-7H32v3.6s.1 4-4 4h-6.6s-3.8-.1-3.8 3.7v6.2S17 43 24 43Zm3.7-2.1a1.2 1.2 0 1 1 0-2.4 1.2 1.2 0 0 1 0 2.4Z" fill="#B4914C" opacity=".85"/></svg>
+          <div class="stack__name">Python</div>
+          <div class="stack__cat">Scripting</div>
+        </div>
+        <div class="stack__item rv" style="transition-delay:0.03s">
+          <svg class="stack__ico" viewBox="0 0 48 48" fill="none" aria-hidden="true" style="animation-delay:0.28s"><ellipse cx="24" cy="12" rx="14" ry="5.5" stroke="#232629" stroke-width="1.6" fill="rgba(199,214,200,.4)"/><path d="M10 12v11c0 3 6.3 5.5 14 5.5s14-2.5 14-5.5V12" stroke="#6E8C74" stroke-width="1.6" fill="none"/><path d="M10 23v11c0 3 6.3 5.5 14 5.5s14-2.5 14-5.5V23" stroke="#B4914C" stroke-width="1.6" fill="none"/></svg>
+          <div class="stack__name">SQL</div>
+          <div class="stack__cat">Databases</div>
+        </div>
+        <div class="stack__item rv" style="transition-delay:0.06s">
+          <svg class="stack__ico" viewBox="0 0 48 48" fill="none" aria-hidden="true" style="animation-delay:0.56s"><circle cx="12" cy="14" r="4" stroke="#6E8C74" stroke-width="1.6" fill="rgba(199,214,200,.4)"/><circle cx="12" cy="34" r="4" stroke="#6E8C74" stroke-width="1.6" fill="rgba(199,214,200,.4)"/><circle cx="24" cy="24" r="5" stroke="#232629" stroke-width="1.7" fill="#fff"/><circle cx="36" cy="14" r="4" stroke="#B4914C" stroke-width="1.6" fill="rgba(223,201,143,.4)"/><circle cx="36" cy="34" r="4" stroke="#B4914C" stroke-width="1.6" fill="rgba(223,201,143,.4)"/><path d="M15.4 16.3 20 21m-4.6 10.7L20 27m9 6 3.6 2.6M29 15l3.6-2.6" stroke="#232629" stroke-width="1.3" opacity=".5"/></svg>
+          <div class="stack__name">PyTorch</div>
+          <div class="stack__cat">Deep learning</div>
+        </div>
+        <div class="stack__item rv" style="transition-delay:0.09s">
+          <svg class="stack__ico" viewBox="0 0 48 48" fill="none" aria-hidden="true" style="animation-delay:0.84s"><path d="M8 38c6-2 9-8 12-16S27 8 40 9" stroke="#B4914C" stroke-width="1.8" fill="none" stroke-linecap="round"/><circle cx="14" cy="33" r="3" fill="#6E8C74"/><circle cx="23" cy="24" r="3" fill="#6E8C74"/><circle cx="31" cy="15" r="3" fill="#C68A76"/><path d="M7 41h34" stroke="#232629" stroke-width="1.4" opacity=".4" stroke-linecap="round"/></svg>
+          <div class="stack__name">scikit-learn</div>
+          <div class="stack__cat">Modelling</div>
+        </div>
+        <div class="stack__item rv" style="transition-delay:0.12s">
+          <svg class="stack__ico" viewBox="0 0 48 48" fill="none" aria-hidden="true" style="animation-delay:1.12s"><path d="M26 5 12 27h9l-3 16 18-23h-9l-1-15Z" stroke="#B4914C" stroke-width="1.7" fill="rgba(223,201,143,.35)" stroke-linejoin="round"/></svg>
+          <div class="stack__name">PySpark</div>
+          <div class="stack__cat">Big data</div>
+        </div>
+        <div class="stack__item rv" style="transition-delay:0.15s">
+          <svg class="stack__ico" viewBox="0 0 48 48" fill="none" aria-hidden="true" style="animation-delay:1.40s"><path d="M8 17 24 9l16 8-16 8-16-8Z" stroke="#232629" stroke-width="1.6" fill="rgba(199,214,200,.35)" stroke-linejoin="round"/><path d="M8 25l16 8 16-8" stroke="#6E8C74" stroke-width="1.6" fill="none" stroke-linejoin="round"/><path d="M8 33l16 8 16-8" stroke="#B4914C" stroke-width="1.6" fill="none" stroke-linejoin="round"/></svg>
+          <div class="stack__name">Databricks</div>
+          <div class="stack__cat">Lakehouse</div>
+        </div>
+        <div class="stack__item rv" style="transition-delay:0.18s">
+          <svg class="stack__ico" viewBox="0 0 48 48" fill="none" aria-hidden="true" style="animation-delay:0.00s"><path d="M14 33a7.5 7.5 0 0 1-.7-15 10.5 10.5 0 0 1 20.2 2.5A6.8 6.8 0 0 1 34 33H14Z" stroke="#232629" stroke-width="1.6" fill="rgba(255,255,255,.7)" stroke-linejoin="round"/><path d="M24 29v-9m0 0-4 4.2m4-4.2 4 4.2" stroke="#6E8C74" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div class="stack__name">Azure</div>
+          <div class="stack__cat">Cloud</div>
+        </div>
+        <div class="stack__item rv" style="transition-delay:0.21s">
+          <svg class="stack__ico" viewBox="0 0 48 48" fill="none" aria-hidden="true" style="animation-delay:0.28s"><g stroke="#6E8C74" stroke-width="1.5" fill="rgba(199,214,200,.35)"><rect x="10" y="24" width="8" height="8" rx="1.5"/><rect x="20" y="24" width="8" height="8" rx="1.5"/><rect x="30" y="24" width="8" height="8" rx="1.5"/><rect x="20" y="15" width="8" height="8" rx="1.5"/></g><path d="M7 34c6 5 26 5 34-4" stroke="#B4914C" stroke-width="1.7" fill="none" stroke-linecap="round"/></svg>
+          <div class="stack__name">Docker</div>
+          <div class="stack__cat">Containers</div>
+        </div>
+        <div class="stack__item rv" style="transition-delay:0.24s">
+          <svg class="stack__ico" viewBox="0 0 48 48" fill="none" aria-hidden="true" style="animation-delay:0.56s"><circle cx="14" cy="12" r="4" stroke="#232629" stroke-width="1.6" fill="#fff"/><circle cx="14" cy="36" r="4" stroke="#6E8C74" stroke-width="1.6" fill="rgba(199,214,200,.4)"/><circle cx="34" cy="24" r="4" stroke="#B4914C" stroke-width="1.6" fill="rgba(223,201,143,.4)"/><path d="M14 16v16M14 24h10a6 6 0 0 0 6-4" stroke="#232629" stroke-width="1.5" fill="none" opacity=".6"/></svg>
+          <div class="stack__name">Git</div>
+          <div class="stack__cat">Version control</div>
+        </div>
+        <div class="stack__item rv" style="transition-delay:0.27s">
+          <svg class="stack__ico" viewBox="0 0 48 48" fill="none" aria-hidden="true" style="animation-delay:0.84s"><rect x="7" y="12" width="34" height="24" rx="7" stroke="#232629" stroke-width="1.6" fill="rgba(255,255,255,.7)"/><path d="M17 20l-4 4 4 4M31 20l4 4-4 4" stroke="#6E8C74" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/><path d="M26 18l-4 12" stroke="#B4914C" stroke-width="1.7" stroke-linecap="round"/></svg>
+          <div class="stack__name">FastAPI</div>
+          <div class="stack__cat">Backend APIs</div>
+        </div>
+        <div class="stack__item rv" style="transition-delay:0.30s">
+          <svg class="stack__ico" viewBox="0 0 48 48" fill="none" aria-hidden="true" style="animation-delay:1.12s"><circle cx="10" cy="24" r="4.5" stroke="#6E8C74" stroke-width="1.5" fill="rgba(199,214,200,.4)"/><circle cx="24" cy="13" r="4.5" stroke="#B4914C" stroke-width="1.5" fill="rgba(223,201,143,.4)"/><circle cx="24" cy="35" r="4.5" stroke="#B4914C" stroke-width="1.5" fill="rgba(223,201,143,.4)"/><circle cx="38" cy="24" r="4.5" stroke="#232629" stroke-width="1.5" fill="#fff"/><path d="M13.6 21.6 20 15.6M13.6 26.4 20 32.4M28.2 15.6l6.2 5.6M28.2 32.4l6.2-5.6" stroke="#232629" stroke-width="1.3" opacity=".5"/></svg>
+          <div class="stack__name">Airflow</div>
+          <div class="stack__cat">Orchestration</div>
+        </div>
+        <div class="stack__item rv" style="transition-delay:0.33s">
+          <svg class="stack__ico" viewBox="0 0 48 48" fill="none" aria-hidden="true" style="animation-delay:1.40s"><rect x="9" y="26" width="7" height="14" rx="2" fill="#6E8C74" opacity=".85"/><rect x="20" y="18" width="7" height="22" rx="2" fill="#B4914C" opacity=".85"/><rect x="31" y="9" width="7" height="31" rx="2" fill="#C68A76" opacity=".85"/></svg>
+          <div class="stack__name">Power BI</div>
+          <div class="stack__cat">Dashboards</div>
+        </div>
+    </div>
+
+    <div class="stack-note rv"><span>In detail</span><i></i></div>
+
+    <div class="skills-grid">
+      <div class="skill rv">
+        <div class="skill__head">
+          <h3>Programming</h3>
+        </div>
+        <div class="skill__list"><span class="pill">Python</span><span class="pill">Java</span><span class="pill">C++</span><span class="pill">JavaScript</span><span class="pill">SQL</span><span class="pill">Bash</span></div>
+      </div>
+
+      <div class="skill rv" style="transition-delay:.06s">
+        <div class="skill__head">
+          <h3>Machine learning</h3>
+        </div>
+        <div class="skill__list"><span class="pill">scikit-learn</span><span class="pill">TensorFlow</span><span class="pill">PyTorch</span><span class="pill">XGBoost</span><span class="pill">NumPy</span><span class="pill">Pandas</span><span class="pill">Model evaluation</span></div>
+      </div>
+
+      <div class="skill rv" style="transition-delay:.12s">
+        <div class="skill__head">
+          <h3>Data &amp; cloud</h3>
+        </div>
+        <div class="skill__list"><span class="pill">Azure</span><span class="pill">Databricks</span><span class="pill">PySpark</span><span class="pill">ETL design</span><span class="pill">Data modeling</span><span class="pill">Power BI</span><span class="pill">Snowflake</span></div>
+      </div>
+
+      <div class="skill rv" style="transition-delay:.18s">
+        <div class="skill__head">
+          <h3>Backend &amp; APIs</h3>
+        </div>
+        <div class="skill__list"><span class="pill">FastAPI</span><span class="pill">REST APIs</span><span class="pill">Node.js</span><span class="pill">PostgreSQL</span><span class="pill">Azure Functions</span><span class="pill">MLflow</span></div>
+      </div>
+
+      <div class="skill rv" style="transition-delay:.24s">
+        <div class="skill__head">
+          <h3>Tools</h3>
+        </div>
+        <div class="skill__list"><span class="pill">Git</span><span class="pill">Docker</span><span class="pill">GitHub Actions</span><span class="pill">Jupyter</span><span class="pill">Jira</span><span class="pill">Linux</span></div>
+      </div>
+
+      <div class="skill rv" style="transition-delay:.3s">
+        <div class="skill__head">
+          <h3>Communication &amp; leadership</h3>
+        </div>
+        <div class="skill__list"><span class="pill">Public speaking</span><span class="pill">Technical writing</span><span class="pill">Teaching</span><span class="pill">Mentoring</span><span class="pill">Stakeholder updates</span><span class="pill">Event organizing</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="breath" aria-hidden="true">
+  <svg viewBox="0 0 1200 46" preserveAspectRatio="none">
+    <path class="breath__path" d="M0 23 C 150 23 180 4 300 4 S 450 42 600 42 S 750 4 900 4 S 1050 23 1200 23"/>
+  </svg>
+</div>
+
+<!-- ================= COMMUNITY ================= -->
+<section class="section" id="community">
+  <div class="wrap">
+    <div class="s-head rv">
+      <h2 class="s-title">Teaching, speaking, <em>and showing up</em></h2>
+      <p class="s-lede">The work I do around campus, outside the code.</p>
+    </div>
+
+      <div class="gallery" style="margin-bottom:26px">
+        <figure class="photo photo--cap gallery__a rv">
+          <img src="images/yoga-class-thursday.jpg" alt="Reetu with students after a power yoga session at RIT" loading="lazy" decoding="async">
+          <figcaption class="photo__cap"><b>End of a Thursday night class</b><span>RIT Power Yoga Club</span></figcaption>
+        </figure>
+                <figure class="photo photo--cap gallery__c rv" style="transition-delay:.08s">
+          <img src="images/yoga-teaching-full-room.jpg" alt="A full studio of students seated on mats before a yoga class begins" loading="lazy" decoding="async">
+          <figcaption class="photo__cap"><b>Teaching a full room</b><span>100+ students · $3,000 raised for charity</span></figcaption>
+        </figure>
+      </div>
+
+    <div class="comm">
+      <article class="comm__card rv">
+        <div class="comm__body">
+          <h3>RIT Power Yoga Club</h3>
+          <p>Volunteer instructor leading weekly power yoga sessions for students, with fundraising classes open to the wider campus.</p>
+          <div class="comm__stat">100+ students · $3,000 raised</div>
+        </div>
+      </article>
+
+      <article class="comm__card rv" style="transition-delay:.08s">
+        <div class="comm__body">
+          <h3>Toastmasters International</h3>
+          <p>Ongoing member, with Level 1: Presentation Mastery completed. The regular speaking practice shows up directly in how I present research and run design reviews.</p>
+          <div class="comm__stat">Presentation Mastery · Level 1</div>
+        </div>
+      </article>
+
+      <article class="comm__card rv" style="transition-delay:.16s">
+        <div class="comm__body">
+          <h3>Student service at RIT</h3>
+          <p>Supporting international student life through orientation help, campus events, and the day-to-day work of helping people settle into a new place. Recognised with the Outstanding International Student Service Award.</p>
+          <div class="comm__stat">Award recipient · 2026</div>
+        </div>
+      </article>
+    </div>
+
+  </div>
+</section>
+
+<div class="breath" aria-hidden="true">
+  <svg viewBox="0 0 1200 46" preserveAspectRatio="none">
+    <path class="breath__path" d="M0 23 C 150 23 180 4 300 4 S 450 42 600 42 S 750 4 900 4 S 1050 23 1200 23"/>
+  </svg>
+</div>
+
+<!-- ================= TESTIMONIALS ================= -->
+<section class="section" id="testimonials">
+  <div class="wrap">
+    <div class="s-head rv">
+      <h2 class="s-title">Working with <em>Reetu</em></h2>
+      <p class="s-lede">Recommendations from managers and colleagues at Tata Consultancy Services, RIT, and my co-op team.</p>
+    </div>
+
+    <div class="tstm" tabindex="0" role="region" aria-label="Recommendations, scroll horizontally">
+      <article class="card tstm__card rv">
+        <span class="tstm__mark" aria-hidden="true">&ldquo;</span>
+        <p class="tstm__q">Over seven months she took complete ownership of designing and implementing a modern data and ML engineering pipeline. She built the ingestion workflows in Azure Data Factory, transformed the data through Azure Data Lake and Databricks, and deployed models through Azure ML Studio with full MLOps integration. She stepped into a team leadership role naturally and delivered with minimal guidance.</p>
+        <div class="tstm__who"><b>Aaron Collins</b><span>Director of Enterprise Applications &amp; Architecture</span></div>
+      </article>
+      <article class="card tstm__card rv" style="transition-delay:0.06s">
+        <span class="tstm__mark" aria-hidden="true">&ldquo;</span>
+        <p class="tstm__q">Reetu developed predictive models for inventory demand and stock optimization during her data science co-op. She turned complex operational data into decisions people could act on, and she communicated the results clearly to technical and non-technical stakeholders alike.</p>
+        <div class="tstm__who"><b>Aniket Shukla</b><span>Senior Data Scientist &amp; BI Developer</span></div>
+      </article>
+      <article class="card tstm__card rv" style="transition-delay:0.12s">
+        <span class="tstm__mark" aria-hidden="true">&ldquo;</span>
+        <p class="tstm__q">Reetu is a Python developer with a good understanding of the language and its frameworks. Her ability to write clean, efficient, structured code is commendable, and her aptitude for problem solving is one of her greatest strengths.</p>
+        <div class="tstm__who"><b>Tanuj Mittal</b><span>Technology Head, Tata Consultancy Services</span></div>
+      </article>
+      <article class="card tstm__card rv" style="transition-delay:0.18s">
+        <span class="tstm__mark" aria-hidden="true">&ldquo;</span>
+        <p class="tstm__q">I worked with Reetu on DevOps projects and she consistently impressed me with her deep understanding of CI/CD, automation, and cloud infrastructure.</p>
+        <div class="tstm__who"><b>Ankith Nagesh</b><span>AI/ML, Cloud &amp; DevSecOps Engineer</span></div>
+      </article>
+      <article class="card tstm__card rv" style="transition-delay:0.24s">
+        <span class="tstm__mark" aria-hidden="true">&ldquo;</span>
+        <p class="tstm__q">Reetu is energetic, curious, and keen to learn. Having worked with her for over a year, I can say she puts her best into everything, and her ideas carried real weight in team discussions.</p>
+        <div class="tstm__who"><b>Payal Pandya</b><span>Senior Executive Professional, CARO</span></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BOOK A MEETING ================= -->
+<section class="section section--tight">
+  <div class="wrap">
+    <div class="book rv">
+      <div>
+        <h2>Book <b>thirty minutes</b></h2>
+        <p>No agenda required. Bring a role you're hiring for, a problem you're stuck on, or a paper you'd like to talk through.</p>
+      </div>
+      <div>
+        <ul class="book__meta">
+          <li>Google Meet</li><li>Pacific time</li><li>Weekday afternoons</li>
+        </ul>
+        <a class="btn btn--primary book__do" href="#">Pick a time
+          <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M4 12L12 4M12 4H6M12 4v6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="section" id="contact">
+  <div class="wrap">
+    <div class="contact rv">
+      <svg class="contact__bg" viewBox="0 0 1200 500" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+        <g class="mandala" style="transform-origin:600px 250px">
+          <circle cx="600" cy="250" r="230" stroke="#6E8C74" stroke-width="1" fill="none" opacity=".22"/>
+          <circle cx="600" cy="250" r="170" stroke="#B4914C" stroke-width="1" fill="none" opacity=".24" stroke-dasharray="3 9"/>
+          <circle cx="600" cy="250" r="110" stroke="#B4914C" stroke-width="1" fill="none" opacity=".2"/>
+        </g>
+      </svg>
+
+      <h2>Looking for my <b>next role</b>.</h2>
+      <p>Software engineering, machine learning, and data roles. If you're building a team that does the work carefully, I'd like to hear about it.</p>
+      <div class="contact__btns">
+        <a class="btn btn--primary" href="mailto:hello@reetuthimmaiah.com">Send an email
+          <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M2.5 4.5h11v7h-11z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><path d="M2.8 5L8 9l5.2-4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+        <a class="btn btn--ghost" href="#" download>Download Resume
+          <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 2v9m0 0l3.2-3.2M8 11L4.8 7.8M2.6 13.4h10.8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+      <div class="contact__links">
+        <a href="#">LinkedIn</a><a href="#">GitHub</a><a href="#">Google Scholar</a><a href="mailto:hello@reetuthimmaiah.com">Email</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__in">
+    <span>© <span id="yr">2026</span> Reetu Thimmaiah — Written and built by me in San Francisco.</span>
+    <a class="top" href="#home">Back to top
+      <svg width="12" height="12" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M8 13V3m0 0L3.6 7.4M8 3l4.4 4.4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+/* =========================================================================
+   ds-styles.css — data-science skin
+   Loaded AFTER css/styles.css by index-ds.html only.
+   Adds the analytical layer (parity card, spec tables, repo shelf) and
+   a monospace numeric voice. Never edit styles.css for these — index.html
+   must keep rendering exactly as it does today.
+   ========================================================================= */
+
+:root{
+  --mono:'JetBrains Mono',ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+
+/* anchor landings: html sets scroll-padding-top:96px, and every section adds
+   another 64px of its own padding — so a nav jump left ~81px of dead space
+   under the bar before the heading. 48px puts the first line ~33px below it. */
+html{scroll-padding-top:48px}
+
+/* ============ TYPOGRAPHIC VOICE ============ */
+/* every figure on the page gets tabular, monospaced numerals */
+.spec-row b{
+  font-family:var(--mono);font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.hero__meta dt{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase}
+
+/* tags, badges and spec keys switch to mono */
+.tag,.badge,.pill{font-family:var(--mono);font-size:12px;letter-spacing:-.01em}
+.spec dt,.stack__cat{font-family:var(--mono);font-size:11.5px;letter-spacing:.09em;text-transform:uppercase}
+
+/* four entries — they fit one row in the 555px text column */
+.hero__meta{grid-template-columns:repeat(4,auto);gap:12px 44px;
+  margin-top:34px;padding-top:22px}
+
+/* note under the hero photo — shares the photo's column width */
+.stage-wrap{width:100%;max-width:430px;margin-left:auto}
+.stage-wrap .stage{max-width:none}
+.stage__note{margin-top:13px;font-size:13px;line-height:1.55;color:var(--ink-soft)}
+
+/* hero now holds the taller award photo (2:3 in a 4:5 frame) — bias the crop
+   up a touch so both her face and the certificate sit inside the frame */
+.stage img{object-position:50% 38%}
+
+/* ============ TESTIMONIALS ============ */
+/* same deep sage as the experience cards, so the two quoted/credential bands
+   read as one family against the ivory page */
+.tstm__card{background:var(--sage-deep);border:1px solid rgba(255,255,255,.1);
+  box-shadow:0 4px 10px rgba(35,38,41,.06), 0 24px 56px -20px rgba(35,55,42,.42)}
+.tstm__card:hover{box-shadow:0 6px 14px rgba(35,38,41,.08), 0 34px 70px -22px rgba(35,55,42,.5)}
+.tstm__mark{color:var(--gold-soft)}
+.tstm__q{color:rgba(255,255,255,.88)}
+.tstm__who{border-top-color:rgba(255,255,255,.22)}
+.tstm__who b{color:var(--ivory)}
+.tstm__who span{color:rgba(255,255,255,.84)}
+
+/* ============ EXPERIENCE ============ */
+/* cards sit on the deep sage from the heading's italic, so the type inverts */
+.xp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.xp{padding:26px 28px 24px;border-radius:var(--r-l);
+  background:var(--sage-deep);border:1px solid rgba(255,255,255,.1);
+  box-shadow:0 4px 10px rgba(35,38,41,.06), 0 24px 56px -20px rgba(35,55,42,.42);
+  transition:transform .45s cubic-bezier(.2,.8,.3,1),box-shadow .45s}
+.xp:hover{transform:translateY(-4px);
+  box-shadow:0 6px 14px rgba(35,38,41,.08), 0 34px 70px -22px rgba(35,55,42,.5)}
+.xp__top{display:flex;align-items:center;gap:14px;margin-bottom:18px;flex-wrap:wrap}
+.xp__year{font-family:var(--mono);font-size:clamp(21px,2vw,30px);font-weight:700;
+  letter-spacing:-.04em;color:var(--ivory);line-height:1;white-space:nowrap}
+.xp__logo{display:grid;place-items:center;min-width:58px;height:38px;padding:0 10px;flex:none;
+  border-radius:9px;background:#fff;border:1px solid rgba(255,255,255,.5);
+  font-family:var(--mono);font-size:13px;font-weight:700;letter-spacing:.04em;color:var(--sage-deep)}
+.xp__logo img{max-height:26px;width:auto}      /* real logo, when images/<org>.png exists */
+.xp__logo b{font-weight:700}                    /* monogram fallback until then */
+.xp__org{font-size:19px;letter-spacing:-.02em;margin-bottom:6px;color:var(--ivory)}
+.xp__co{font-size:15px;color:rgba(255,255,255,.88);margin-bottom:3px}
+.xp__dates{font-family:var(--mono);font-size:12px;letter-spacing:.02em;
+  color:rgba(255,255,255,.84);margin-bottom:14px}
+.xp__desc{font-size:14.5px;line-height:1.6;color:rgba(255,255,255,.86)}
+.xp__desc b{font-family:var(--mono);font-variant-numeric:tabular-nums;font-weight:500;
+  font-size:13.5px;letter-spacing:-.02em;color:#fff}
+.xp__rec{margin-top:18px;padding-top:15px;border-top:1px solid rgba(255,255,255,.22)}
+.xp__reck{font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:rgba(255,255,255,.84);margin-bottom:9px}
+.xp__rec ul{list-style:none;display:flex;flex-direction:column;gap:7px}
+.xp__rec li{position:relative;padding-left:18px;font-size:14px;line-height:1.5;
+  color:rgba(255,255,255,.88)}
+.xp__rec li::before{content:"";position:absolute;left:0;top:8px;width:5px;height:5px;
+  border-radius:50%;background:var(--gold-soft)}
+.xp__rec li span{font-family:var(--mono);font-size:12.5px;color:rgba(255,255,255,.82)}
+
+/* ============ PROJECT SPEC TABLE ============ */
+.spec-rows{
+  margin:18px 0 0;border-top:1px solid var(--line-2);
+  display:grid;grid-template-columns:auto 1fr}
+.spec-row{display:contents}
+.spec-row dt,.spec-row dd{padding:7px 0;border-bottom:1px solid var(--line-2)}
+.spec-row dt{
+  font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--ink-soft);padding-right:20px;white-space:nowrap}
+.spec-row dd{font-size:14px;color:var(--ink-2);line-height:1.5}
+.spec-row b{font-family:var(--mono);font-size:13.5px;color:var(--ink);font-weight:500}
+.proj__meta h3{margin-bottom:4px}
+
+/* ============ CASE-STUDY LINKS + FINDING ============ */
+.proj__links{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:18px}
+.proj__links a{
+  display:inline-flex;align-items:center;gap:7px;
+  font-family:var(--mono);font-size:12.5px;letter-spacing:-.01em;color:var(--sage-deep);
+  padding-bottom:2px;border-bottom:1px solid rgba(79,107,87,.28);transition:border-color .3s,color .3s}
+.proj__links a:hover{color:var(--ink);border-bottom-color:var(--ink)}
+.proj__links svg{width:11px;height:11px;flex:none}
+
+.finding{margin-top:18px;padding-top:15px;border-top:1px solid var(--line)}
+.finding__k{
+  font-family:var(--mono);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink-soft);margin-bottom:7px}
+.finding p{font-size:14.5px;line-height:1.6;color:var(--ink-2)}
+.finding b{font-family:var(--mono);font-variant-numeric:tabular-nums;
+  font-weight:500;color:var(--ink);letter-spacing:-.02em}
+
+/* ============ REPO SHELF ============ */
+.repo-list{display:grid;grid-template-columns:repeat(2,1fr);gap:0 48px;
+  border-top:1px solid var(--line-2)}
+.repo{
+  display:grid;grid-template-columns:1fr auto;gap:5px 16px;align-items:baseline;
+  padding:15px 0;border-bottom:1px solid var(--line-2);transition:opacity .3s}
+.repo__n{font-family:var(--mono);font-size:13.5px;letter-spacing:-.02em;color:var(--ink);
+  overflow-wrap:anywhere;transition:color .3s}
+.repo__l{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;
+  color:var(--ink-soft)}
+.repo__d{grid-column:1/-1;font-size:13.5px;line-height:1.5;color:var(--ink-soft)}
+.repo:hover .repo__n{color:var(--sage-deep)}
+.repo:hover .repo__n::after{content:" \2197";font-size:11px}
+
+/* research block now sits inside the work section — top-align it with the
+   first paper card instead of floating in the middle of the column */
+.research{align-items:start}
+.res-vis{position:sticky;top:104px}
+
+/* sub-labels dividing the merged work + research section */
+.stack-note span{font-family:var(--mono);font-size:11.5px;font-weight:500;
+  letter-spacing:.14em;text-transform:uppercase}
+.stack-note--gap{margin-top:62px}
+
+/* ============ SMALL OVERRIDES ============ */
+
+/* ============ RESPONSIVE ============ */
+@media(max-width:1024px){
+  .stage-wrap{max-width:520px;margin:0 auto}
+  .res-vis{position:static}
+}
+@media(max-width:760px){
+  .xp-grid{grid-template-columns:1fr}
+  .repo-list{grid-template-columns:1fr}
+  .spec-rows{grid-template-columns:1fr}
+  .spec-row dt{padding-bottom:0;border-bottom:none}
+}

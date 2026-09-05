@@ -1,0 +1,29 @@
+/* Design tokens — colour, type, spacing, radii, shadows.
+   Loaded before styles.css; every other rule reads these. */
+/* ============ TOKENS ============ */
+:root{
+  --ivory:#FAF7F0;
+  --ivory-2:#F3EEE3;
+  --ivory-3:#EDE7D9;
+  --ink:#232629;
+  --ink-2:#3D434A;
+  --ink-soft:#575D65;
+  --sage:#6E8C74;
+  --sage-deep:#4F6B57;
+  --sage-mist:#C7D6C8;
+  --gold:#B4914C;
+  --gold-soft:#DFC98F;
+  --clay:#C68A76;
+  --blush:#E8CFC5;
+  --glass:rgba(255,255,255,.62);
+  --line:rgba(35,38,41,.10);
+  --line-2:rgba(35,38,41,.06);
+  --shadow-s:0 1px 2px rgba(35,38,41,.04), 0 4px 14px rgba(35,38,41,.05);
+  --shadow-m:0 2px 6px rgba(35,38,41,.04), 0 14px 40px -12px rgba(35,38,41,.14);
+  --shadow-l:0 4px 10px rgba(35,38,41,.05), 0 30px 70px -22px rgba(35,38,41,.22);
+  --sans:'Karla',system-ui,-apple-system,sans-serif;
+  --serif:'Newsreader',Georgia,serif;
+  --r-s:12px; --r-m:20px; --r-l:28px; --r-xl:40px;
+  --maxw:1200px;
+  --breath:9s;
+}
