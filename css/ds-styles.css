@@ -29,14 +29,11 @@ html{scroll-padding-top:48px}
 .hero__meta{grid-template-columns:repeat(4,auto);gap:12px 44px;
   margin-top:34px;padding-top:22px}
 
-/* note under the hero photo — shares the photo's column width */
-.stage-wrap{width:100%;max-width:430px;margin-left:auto}
-.stage-wrap .stage{max-width:none}
-.stage__note{margin-top:13px;font-size:13px;line-height:1.55;color:var(--ink-soft)}
-
-/* hero now holds the taller award photo (2:3 in a 4:5 frame) — bias the crop
-   up a touch so both her face and the certificate sit inside the frame */
-.stage img{object-position:50% 38%}
+/* hero holds the campus portrait (3:4 in a 4:5 frame — a shallow crop) */
+.stage img{object-position:50% 42%}
+/* the award photo moved to its own band below the hero */
+.recog__photo img{object-position:50% 38%}
+.recog__body .s-lede{margin-top:14px}
 
 /* ============ TESTIMONIALS ============ */
 /* same deep sage as the experience cards, so the two quoted/credential bands
@@ -142,7 +139,6 @@ html{scroll-padding-top:48px}
 
 /* ============ RESPONSIVE ============ */
 @media(max-width:1024px){
-  .stage-wrap{max-width:520px;margin:0 auto}
   .res-vis{position:static}
 }
 @media(max-width:760px){
